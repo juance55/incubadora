@@ -1,0 +1,88 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(0, 166, 255);
+}
+.contenedor {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.235);
+}
+.contenedor header {
+  font-size: 1.5rem;
+  color: rgb(0, 166, 255);
+  font-weight: 500;
+  text-align: center;
+}
+.contenedor .formulario {
+  margin-top: 30px;
+}
+.formulario .entrada {
+  width: 100%;
+  margin-top: 20px;
+}
+.entrada label {
+  color: rgb(0, 166, 255);
+}
+.formulario :where(.entrada input, .caja-select) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: rgb(107, 107, 107);
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.entrada input:focus {
+  box-shadow: 0 2px rgb(0, 166, 255);
+}
+
+
+.formulario .columna {
+  display: flex;
+  column-gap: 15px;
+}
+
+.caja-select select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: rgb(107, 107, 107);
+  font-size: 1rem;
+}
+
+.formulario button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(0, 166, 255);
+}
+.formulario button:hover {
+  background: rgb(107, 107, 107);
+}
